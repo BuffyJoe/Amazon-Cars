@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Cars</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  <style>
+      body, html{
+          height: 100%;
+          margin: 0px;
+      }
+      img{
+          height: 100%;
+          width: 100%;
+          opacity: 0.8;
+      }
+      .car{
+          /* position: relative; */
+          animation-name: slide-right;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          color: red;
+          opacity: 0.7;
+          left: 0px;
+        }
+        @keyframes slide-right {
+          0%   {left:5px;}
+          100%  {left:200px;}
+        }
+      .below{
+        height: 100%;
+        background-color: white;
+        opacity: 0.7;
+        
+      }
+  </style>
+       <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" style="color: rgb(60, 60, 180);">
+        <div class="container-fluid">
+            
+            <div style="width: 60px;"></div>
+          <a class="navbar-brand" href="#" style="font-weight: 200px;">Amazon Cars</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Model</a></li>
+                        <li><a class="dropdown-item" href="#">Engine</a></li>
+                        <li><a class="dropdown-item" href="#">Company</a></li>
+                        <li><a class="dropdown-item" href="#">Price</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">View full list</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</head>
+<body style="background-color: rgb(48, 41, 41);">
+    <img src="mustang.jpg" alt="">
+        
+    </div>
+
+    <br> <br>
+<div class="below">
+
+</div>
+</body>
+</html>
