@@ -13,11 +13,13 @@
           height: 100%;
           margin: 0px;
       }
-      .img{
-          height: 100%;
-          width: 100%;
-          opacity: 0.8;
-      }
+      .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
       .car{
           /* position: relative; */
           animation-name: slide-right;
@@ -25,6 +27,7 @@
           animation-iteration-count: infinite;
           color: red;
           opacity: 0.7;
+          
           left: 0px;
         }
         @keyframes slide-right {
@@ -35,56 +38,120 @@
         height: 100%;
         background-color: white;
         opacity: 0.7;
-        
+
       }
+      .right {
+  position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
+  border-top: 1px double rgb(94, 91, 91);
+}
+.center {
+  line-height: 500px;
+  height: 500px;
+  text-align: center;
+}
+
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+   .navitem{
+    padding: 0px, 10px, 0px, 10px;
+   }     
+   .line{
+    height: 20;
+    width: 50;
+    background-color: white;
+    color: white;
+   }
+   a{
+    color: white;
+    text-decoration: none;
+   }
+   @media (max-width: 996px){
+    .center {
+  line-height: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+   }
+   
+   .center p{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+   }
   </style>
-  
-  
-       <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-            
-            <div style="width: 60px;"></div>
-          <a class="navbar-brand" href="#" style="font-weight: 200px;">Amazon Cars</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle bold" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        All Categories
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="#">Model</a></li>
-                        <li><a class="dropdown-item" href="#">Engine</a></li>
-                        <li><a class="dropdown-item" href="#">Company</a></li>
-                        <li><a class="dropdown-item" href="#">Price</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">View full list</a></li>
-                    </ul>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-</head>
-<body style="background-color: rgb(48, 41, 41);">
-    <img src="bg.png" alt="" class="img">
-        
+ 
+<nav class="navbar" style="background-color: rgba(35,31,32,1);">
+  <div class="container-fluid" >
+    <div class="row">
+      <div class="col-lg-1" style="display: flex; justify-items: center;">
+
+        <img src="logo.png" alt="" width="120">
+      </div>
+      <div class="col-lg-8"></div>
+      <div class="col-lg-3">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-
-    <br> <br>
-<div class="below">
-
-</div>
-
-<nav class="navbar navbar-light bg-dark">
-  <div class="container" style="display: flex; justify-content: center;">
-    <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="" width="400" height="44">
-    </a>
   </div>
-</nav>
+</nav> 
+<div class="container-fluid" style="padding: 10px; border-top: 1px solid white; border-bottom: 1px solid white;">
+  <span>
+    <div class="line"> </div>
+  </span>
+          
+  <a class="navitem" href="#" style="font-weight: 200px; padding-right: 40px;">Top Deals</a>
+  
+  <a class="navitem" href="#" style="font-weight: 200px; padding-right: 40px;">Customer Support</a>
+  
+  <a class="navitem" href="#" style="font-weight: 200px; padding-right: 40px;">About us</a>
+ 
+</div>
+  
+       <!-- <nav class="navbar sticky-top">
+        <div class="container-fluid">
+          
+        </div>
+      </nav> -->
+</head>
+<body style="background-color: rgba(0,0,0,1);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7">
+        <img src="car.png" class="rounded float-end img" alt="...">
+      </div>
+      <div class="col-lg-5 d-flex" style="justify-items: center;">
+        <!-- <div class="row"> -->
 
+          
+          <div class="center">
+            <p class=""style="color: white;">Best Deals. Competitive Prices. Easy Payment</p>
+          </div>
+        <!-- </div> -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="right" style="color: rgb(136, 133, 133);">
+    <h5 style="font-style: italic; text-align: center;"> 
+      Amazon cars - Luxury you can afford
+
+    </h5>
+  </div>
 </body>
 </html>
